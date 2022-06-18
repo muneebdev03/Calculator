@@ -1,0 +1,89 @@
+:root{
+  --primary :#d81e5b;
+  --secondary : #8c38ff;
+  --dark : #131a26;
+  --light : #eee;
+  
+}
+
+* {
+  margin:0px ;
+  padding:0px ;
+  box-sizing: border-box;
+  font-family: 'Fira Sans' ,sans-serif;
+}
+
+body{
+  background-color: var(--light);
+
+}
+
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container{
+  border: 1px solid var(--primary);
+  width: 100%;
+  background-color: #fff;
+  /* border-radius: 30px; */
+  max-width: 500px;
+  /* box-shadow: 1px 5px lightgray; */
+}
+
+.display{
+  padding: 16px;
+  text-align: right;
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 24px;
+  font-weight: 400;
+}
+.inp{
+  padding: 16px;
+  text-align: right;
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 24px;
+  font-weight: 400;
+  border: none;
+
+}
+
+button{
+  appearance: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 16px;
+  cursor: pointer;
+
+}
+
+button:hover{
+  opacity: 0.9;
+}
+.operator{
+   display: flex;
+  
+}
+
+.operator button{
+  flex: 1 1 0%; 
+  background-color: var(--primary);
+  font-weight: 700;
+}
+
+.digits{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digits button{
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+  background-color: var(--dark);
+}
